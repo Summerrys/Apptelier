@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+/* WordPress admin bar offset for fixed headers */
+:root { --wp-adminbar-h: 0px; }
+
+body.admin-bar { --wp-adminbar-h: 32px; }
+@media (max-width: 782px) {
+  body.admin-bar { --wp-adminbar-h: 46px; }
+}
+
+/* Push any fixed header that uses .apptelier-fixed-header */
+.apptelier-fixed-header {
+  top: var(--wp-adminbar-h) !important;
+}
+
+/* Disable CRA default logo completely */
+.App-logo {
+    display: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #1A3569;
+}
+
+.App-link {
+    color: #5BC5E2;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apptelier Light Theme Animations */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in-up 0.6s ease-out;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(91, 197, 226, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(91, 197, 226, 0.5);
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5BC5E2;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1A3569;
+}
+
+/* Gradient text utility */
+.gradient-text {
+    background: linear-gradient(135deg, #1A3569 0%, #5BC5E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Gradient backgrounds */
+.gradient-bg-hero {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+}
+
+.gradient-bg-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}

@@ -3,7 +3,7 @@ export const companyInfo = {
   name: "Apptelier",
   tagline: "Customised Digital Solutions for Your Business",
   description: "Apptelier builds modular, scalable digital solution tailored to your unique business workflows — using AI to streamline your business with our cutting-edge ordering and booking systems, providing you",
-  logo: "https://apptelier.sg/wp-content/uploads/2026/01/Logo_new.png",
+  logo: "https://cart.apptelier.sg/wp-content/uploads/2026/01/Logo_new.png",
 };
 
 export const navLinks = [

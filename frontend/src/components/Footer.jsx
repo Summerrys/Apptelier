@@ -5,7 +5,7 @@ import { Twitter, Linkedin, Github, Instagram, Facebook } from "lucide-react";
 
 export const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=615840277061142", label: "Facebook" }, // Replace with your Facebook page URL", label: "Twitter" },
+    { icon: Facebook, href: "https://www.facebook.com/apptelier.sg", label: "Facebook" }, // Replace with your Facebook page URL", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Instagram, href: "#", label: "Instagram" },

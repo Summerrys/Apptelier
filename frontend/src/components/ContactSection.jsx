@@ -19,7 +19,7 @@ export const ContactSection = () => {
         }, []); 
     const endpoint = useMemo(() => {
         // keep using your existing WP handler
-        return "https://apptelier.sg/wp-content/themes/woostify-child/apptelier-contact.php";
+        return "https://cart.apptelier.sg/wp-content/themes/woostify-child/apptelier-contact.php";
     }, []);
 
     const fireScheduleAnalytics = () => {

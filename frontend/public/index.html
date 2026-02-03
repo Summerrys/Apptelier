@@ -55,6 +55,49 @@
                 document.head.appendChild(tailwindScript);
             }
         </script>
+        <!-- JSON-LD: Organization -->
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Apptelier",
+            "url": "https://apptelier.sg/",
+            "logo": "https://cart.apptelier.sg/wp-content/uploads/2026/01/Logo_just.png",
+            "description": "Customised digital solutions for growing SMEs, including AI-powered ordering and booking systems."
+          }
+          </script>
+        
+          <!-- JSON-LD: WebSite -->
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Apptelier",
+            "url": "https://apptelier.sg/",
+            "inLanguage": "en-SG"
+          }
+          </script>
+        
+          <!-- JSON-LD: WebPage (Home / Landing Page) -->
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Apptelier | Customised Digital Solutions with AI-Powered Ordering & Booking",
+            "url": "https://apptelier.sg/",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Apptelier",
+              "url": "https://apptelier.sg/"
+            },
+            "about": [
+              "AI-powered ordering",
+              "Booking systems",
+              "Customised digital solutions",
+              "Full-stack development"
+            ]
+          }
+          </script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
